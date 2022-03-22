@@ -6,6 +6,7 @@
 
 在vscode左侧的扩展工具中搜索"go"，点击安装第一个插件（Go）。
 ![安装go编译环境](img/1.png)
+
 2. 通过[下载地址](https://studygolang.com/dl)下载并安装go，这里选择用msi下载文件进行安装。
 ![](img/2.png)
 3. 按默认步骤安装go语言，安装过程中会自动将go的路径添加到系统的环境变量中。
@@ -90,3 +91,18 @@ func main() {
 最后的运行结果如下图所示：
 ![](img/5.png)
 ### 三、创建版本库，上传到github
+7. 在github上创建远程仓库
+![](img/6.png)
+8. 本地初始化git，查看提交状态，添加文件到本地缓存，最后提交到本地仓库
+> * git init
+> * git status
+> * git add .
+> * git commit -m "xxxx"
+
+![](img/7.png)
+9. 与远程仓库建立连接并push到远程仓库
+> * git remote add orgin
+> * git remote add origin git@github.com:用户名/仓库名.git（使用ssh连接远程仓库）
+> * git push -u origin master
+
+![](img/8.png)
